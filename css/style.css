@@ -1,0 +1,247 @@
+/* ============================================
+   Ovometro — Custom Styles
+   Palette: dominant orange/yellow-orange, white
+   ============================================ */
+
+:root {
+  --ovometro-orange: #f97316;
+  --ovometro-orange-dark: #ea580c;
+  --ovometro-orange-darker: #c2410c;
+  --ovometro-orange-light: #fb923c;
+  --ovometro-bg: #f97316;
+  --ovometro-bg-gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  --ovometro-text-on-orange: #ffffff;
+  --ovometro-card-bg: #ffffff;
+  --ovometro-card-text: #1f2937;
+  --ovometro-up: #16a34a;
+  --ovometro-down: #dc2626;
+  --ovometro-stable: #6b7280;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--ovometro-bg-gradient);
+  color: var(--ovometro-text-on-orange);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header */
+.ovometro-header {
+  background: rgba(234, 88, 12, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.ovometro-header .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.ovometro-header .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.ovometro-header .nav-link:hover,
+.ovometro-header .nav-link:focus {
+  color: #fff !important;
+}
+
+/* Quote section */
+#quote {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.quote-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-2px);
+}
+
+.quote-price {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0.5rem 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.quote-date {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.quote-label {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+.variation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  background: rgba(255,255,255,0.2);
+}
+
+.variation-up { color: #bbf7d0; }
+.variation-down { color: #fecaca; }
+.variation-stable { color: #e5e7eb; }
+
+/* Charts section */
+#charts {
+  border-radius: 2rem 2rem 0 0;
+  color: var(--ovometro-card-text);
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+}
+
+/* Filter buttons */
+.btn-outline-orange {
+  color: var(--ovometro-orange-dark);
+  border-color: var(--ovometro-orange);
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-orange:hover,
+.btn-outline-orange:focus {
+  background: var(--ovometro-orange);
+  color: #fff;
+  border-color: var(--ovometro-orange);
+}
+
+.btn-outline-orange.active {
+  background: var(--ovometro-orange);
+  color: #fff;
+  border-color: var(--ovometro-orange);
+  box-shadow: 0 2px 8px rgba(249,115,22,0.4);
+}
+
+/* Related events */
+#relatedEvents {
+  transition: opacity 0.3s ease;
+}
+
+.event-card {
+  background: #fff7ed;
+  border-left: 4px solid var(--ovometro-orange);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(249,115,22,0.15);
+}
+
+.event-card a {
+  color: var(--ovometro-orange-darker);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.event-card a:hover {
+  text-decoration: underline;
+}
+
+.event-card a:focus-visible {
+  outline: 2px solid var(--ovometro-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* About section */
+#about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Footer */
+footer {
+  background: rgba(194, 65, 12, 0.6);
+}
+
+/* Accessibility */
+.btn:focus-visible,
+a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .quote-price {
+    font-size: 2.5rem;
+  }
+  .quote-card {
+    padding: 1.5rem 1rem;
+  }
+  .chart-container {
+    min-height: 280px;
+  }
+  .filter-btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+  }
+}
+
+/* Loading / Error states */
+.state-message {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.15);
+  font-size: 1.1rem;
+}
+
+.state-error {
+  background: rgba(220, 38, 38, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
+/* Weekly comparison */
+.weekly-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3rem 0.9rem;
+  border-radius: 1.5rem;
+  background: rgba(255,255,255,0.15);
+}
