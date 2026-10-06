@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovometro — Cotação e evolução do preço dos ovos</title>
+  <meta name="description" content="Acompanhe a variação do preço de uma caixa de 30 ovos em um mercado específico da região de Goiânia, Goiás. Experimento independente de visualização de dados.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Chart.js -->
+<!-- Chart.js + date adapter (obrigatório para escala temporal) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/dist/date-fns.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="ovometro-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="favicon.svg" alt="" width="32" height="32" class="d-inline-block align-text-top">
+        <span class="fw-bold fs-4">Ovometro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#quote">Cotação do Ovo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#charts">Gráficos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Cotação -->
+    <section id="quote" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center text-white">
+            <p class="text-uppercase fw-semibold mb-1 opacity-75" style="letter-spacing: 2px;">🥚 Ovometro</p>
+            <h1 class="display-5 fw-bold mb-4">Cotação do Ovo</h1>
+            <div id="currentQuote" class="quote-card mx-auto">
+              <!-- Preenchido via JS -->
+            </div>
+            <div id="weeklyComparison" class="mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Gráficos -->
+    <section id="charts" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="fw-bold mb-1 text-center">Evolução do preço</h2>
+        <p class="text-center text-muted mb-4">Preço observado de uma caixa de 30 ovos no mercado pesquisado.</p>
+
+        <!-- Filtros -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" role="group" aria-label="Filtros de período">
+          <button class="btn btn-outline-orange filter-btn" data-range="total">Total</button>
+          <button class="btn btn-outline-orange filter-btn" data-range="2y">2 anos</button>
+          <button class="btn btn-outline-orange filter-btn active" data-range="1y">1 ano</button>
+          <button class="btn btn-outline-orange filter-btn" data-range="6m">6 meses</button>
+          <button class="btn btn-outline-orange filter-btn" data-range="3m">3 meses</button>
+        </div>
+
+        <!-- Gráfico -->
+        <div class="chart-container mx-auto" style="max-width: 900px;">
+          <canvas id="priceChart" aria-label="Gráfico de evolução do preço da caixa de 30 ovos" role="img"></canvas>
+        </div>
+
+        <!-- Acontecimentos relacionados -->
+        <div id="relatedEvents" class="mt-5 mx-auto" style="max-width: 800px;">
+          <p class="text-muted text-center">Selecione um ponto no gráfico para ver os acontecimentos relacionados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-white">
+            <h2 class="fw-bold mb-4">Sobre o Ovometro</h2>
+            <p>O Ovometro é um experimento independente criado para acompanhar a variação do preço de uma caixa de 30 ovos em um mercado pesquisado na região de Goiânia, Goiás.</p>
+            <p>Os dados apresentados não representam uma cotação oficial do mercado brasileiro e não devem ser utilizados como referência nacional para o preço dos ovos. Eles refletem exclusivamente as observações realizadas no estabelecimento pesquisado.</p>
+            <p>Além da evolução dos preços, o projeto registra acontecimentos políticos, econômicos e sociais relevantes em cada período. A proposta é permitir a observação de possíveis relações temporais entre esses acontecimentos e as variações registradas, sem afirmar que determinado evento tenha causado uma mudança específica no preço.</p>
+            <p>O Ovometro possui caráter experimental e também busca funcionar como uma ferramenta de observação política e econômica. A longo prazo, a proposta é preservar a independência da coleta, reduzindo o risco de interferências externas sobre a fonte dos preços.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center text-white">
+    <div class="container">
+      <p class="mb-1 fw-bold">Ovometro</p>
+      <p class="mb-1 small opacity-75">Independent data visualization experiment</p>
+      <p class="mb-0 small opacity-50">© 2026 Ovometro</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- App JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

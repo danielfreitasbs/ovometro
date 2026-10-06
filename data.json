@@ -1,0 +1,374 @@
+[
+  {
+    "date": "2024-01-15",
+    "value": 14.50,
+    "news": [
+      {
+        "headline": "Preço dos ovos sobe com aumento da demanda no início do ano",
+        "link": "https://example.com/news/1"
+      }
+    ]
+  },
+  {
+    "date": "2024-02-12",
+    "value": 15.20,
+    "news": [
+      {
+        "headline": "Custo de produção impacta preço dos ovos em Goiás",
+        "link": "https://example.com/news/2"
+      },
+      {
+        "headline": "Exportações de ovos crescem e pressionam mercado interno",
+        "link": "https://example.com/news/3"
+      }
+    ]
+  },
+  {
+    "date": "2024-03-10",
+    "value": 16.80,
+    "news": [
+      {
+        "headline": "Entressafra eleva preço dos ovos no Centro-Oeste",
+        "link": "https://example.com/news/4"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-08",
+    "value": 17.90,
+    "news": [
+      {
+        "headline": "Inflação de alimentos preocupa consumidores",
+        "link": "https://example.com/news/5"
+      },
+      {
+        "headline": "Governo anuncia medidas para conter alta de preços",
+        "link": "https://example.com/news/6"
+      }
+    ]
+  },
+  {
+    "date": "2024-05-06",
+    "value": 18.20,
+    "news": [
+      {
+        "headline": "Ovos ficam mais caros com aumento do custo do milho",
+        "link": "https://example.com/news/7"
+      }
+    ]
+  },
+  {
+    "date": "2024-06-03",
+    "value": 17.50,
+    "news": [
+      {
+        "headline": "Queda na demanda derruba preço dos ovos em Goiânia",
+        "link": "https://example.com/news/8"
+      }
+    ]
+  },
+  {
+    "date": "2024-07-01",
+    "value": 16.90,
+    "news": [
+      {
+        "headline": "Oferta de ovos aumenta e preço recua no atacado",
+        "link": "https://example.com/news/9"
+      }
+    ]
+  },
+  {
+    "date": "2024-08-05",
+    "value": 18.50,
+    "news": [
+      {
+        "headline": "Alta do dólar encarece insumos para avicultura",
+        "link": "https://example.com/news/10"
+      },
+      {
+        "headline": "Consumidores buscam alternativas proteicas",
+        "link": "https://example.com/news/11"
+      }
+    ]
+  },
+  {
+    "date": "2024-09-02",
+    "value": 19.80,
+    "news": [
+      {
+        "headline": "Preço dos ovos atinge maior valor do ano em Goiânia",
+        "link": "https://example.com/news/12"
+      }
+    ]
+  },
+  {
+    "date": "2024-10-07",
+    "value": 21.30,
+    "news": [
+      {
+        "headline": "Crise logística afeta distribuição de ovos",
+        "link": "https://example.com/news/13"
+      },
+      {
+        "headline": "Supermercados registram aumento na procura por ovos",
+        "link": "https://example.com/news/14"
+      }
+    ]
+  },
+  {
+    "date": "2024-11-04",
+    "value": 20.10,
+    "news": [
+      {
+        "headline": "Importação de ovos alivia pressão sobre preços",
+        "link": "https://example.com/news/15"
+      }
+    ]
+  },
+  {
+    "date": "2024-12-02",
+    "value": 22.40,
+    "news": [
+      {
+        "headline": "Festas de fim de ano elevam consumo e preço dos ovos",
+        "link": "https://example.com/news/16"
+      }
+    ]
+  },
+  {
+    "date": "2025-01-06",
+    "value": 23.00,
+    "news": [
+      {
+        "headline": "Preço dos ovos começa o ano em alta",
+        "link": "https://example.com/news/17"
+      }
+    ]
+  },
+  {
+    "date": "2025-02-03",
+    "value": 21.80,
+    "news": [
+      {
+        "headline": "Safra de milho melhora e preço dos ovos recua",
+        "link": "https://example.com/news/18"
+      }
+    ]
+  },
+  {
+    "date": "2025-03-03",
+    "value": 20.50,
+    "news": [
+      {
+        "headline": "Consumo de ovos cresce no Brasil",
+        "link": "https://example.com/news/19"
+      }
+    ]
+  },
+  {
+    "date": "2025-04-07",
+    "value": 19.90,
+    "news": [
+      {
+        "headline": "Oferta recorde de ovos derruba preços",
+        "link": "https://example.com/news/20"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-05",
+    "value": 20.70,
+    "news": [
+      {
+        "headline": "Aumento de custos preocupa produtores de ovos",
+        "link": "https://example.com/news/21"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-02",
+    "value": 22.10,
+    "news": [
+      {
+        "headline": "Preço dos ovos volta a subir em Goiânia",
+        "link": "https://example.com/news/22"
+      },
+      {
+        "headline": "Greve de caminhoneiros afeta abastecimento",
+        "link": "https://example.com/news/23"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-07",
+    "value": 23.50,
+    "news": [
+      {
+        "headline": "Entressafra e alta do dólar pressionam preço dos ovos",
+        "link": "https://example.com/news/24"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "value": 22.80,
+    "news": [
+      {
+        "headline": "Queda na exportação alivia mercado interno de ovos",
+        "link": "https://example.com/news/25"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-01",
+    "value": 21.40,
+    "news": [
+      {
+        "headline": "Preço dos ovos cai com aumento da oferta",
+        "link": "https://example.com/news/26"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-06",
+    "value": 20.90,
+    "news": [
+      {
+        "headline": "Consumidores comemoram queda no preço dos ovos",
+        "link": "https://example.com/news/27"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "value": 22.30,
+    "news": [
+      {
+        "headline": "Alta do frango impulsiona consumo de ovos",
+        "link": "https://example.com/news/28"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-01",
+    "value": 24.00,
+    "news": [
+      {
+        "headline": "Preço dos ovos dispara com demanda de fim de ano",
+        "link": "https://example.com/news/29"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-05",
+    "value": 25.20,
+    "news": [
+      {
+        "headline": "Ovos iniciam 2026 com preço recorde em Goiânia",
+        "link": "https://example.com/news/30"
+      },
+      {
+        "headline": "Inflação de alimentos preocupa governo",
+        "link": "https://example.com/news/31"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-02",
+    "value": 24.10,
+    "news": [
+      {
+        "headline": "Safra recorde de milho derruba custo de produção",
+        "link": "https://example.com/news/32"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-02",
+    "value": 22.50,
+    "news": [
+      {
+        "headline": "Preço dos ovos recua com aumento da oferta",
+        "link": "https://example.com/news/33"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "value": 21.80,
+    "news": [
+      {
+        "headline": "Consumo de ovos cresce 5% no primeiro trimestre",
+        "link": "https://example.com/news/34"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "value": 20.90,
+    "news": [
+      {
+        "headline": "Oferta de ovos supera demanda e preço cai",
+        "link": "https://example.com/news/35"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "value": 19.70,
+    "news": [
+      {
+        "headline": "Preço dos ovos atinge menor valor do ano",
+        "link": "https://example.com/news/36"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "value": 18.90,
+    "news": [
+      {
+        "headline": "Entressafra pressiona preço dos ovos",
+        "link": "https://example.com/news/37"
+      },
+      {
+        "headline": "Exportações de ovos batem recorde",
+        "link": "https://example.com/news/38"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "value": 19.50,
+    "news": [
+      {
+        "headline": "Alta do dólar encarece ração e preço dos ovos sobe",
+        "link": "https://example.com/news/39"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "value": 20.80,
+    "news": [
+      {
+        "headline": "Greve nos portos afeta exportação de ovos",
+        "link": "https://example.com/news/40"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "value": 21.60,
+    "news": [
+      {
+        "headline": "Preço dos ovos sobe com aproximação das festas",
+        "link": "https://example.com/news/41"
+      },
+      {
+        "headline": "Governo estuda reduzir impostos sobre alimentos",
+        "link": "https://example.com/news/42"
+      }
+    ]
+  }
+]
